@@ -109,7 +109,7 @@ spec:
       containers:
         - name: frontend
           # Use the correct frontend image
-          image: ronit0000/k8sfes104aws:v3
+          image: ronit0000/k8sfes104aws:v4
           ports:
             - containerPort: 8080
           env:
