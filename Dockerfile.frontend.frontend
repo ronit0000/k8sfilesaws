@@ -2,8 +2,9 @@
 FROM node:18 AS build-stage
 WORKDIR /app
 RUN apt-get update && apt-get install -y git
-# Clone frontend repo
-RUN git clone https://github.com/golukumarkluniversity/K8sfes104.git .
+
+# Clone frontend repo from GitHub
+RUN git clone https://github.com/ronit0000/K8sfes104aws.git .
 RUN npm install
 RUN npm run build
 
